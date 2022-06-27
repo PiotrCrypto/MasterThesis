@@ -1,6 +1,48 @@
 main.app {
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    background-color: #ddd;
+  min-height: 100vh;
+  display: flex;
+  flex-grow: 1;
+}
+
+aside.navigation {
+  min-width: 25vw;
+  background-color: white;
+  padding: 30px;
+  text-transform: uppercase;
+}
+
+.upper {
+  min-width: 75vw;
+  display: flex;
+  flex-grow: 1;
+  min-height: 50vh;
+}
+
+.middle {
+  min-width: 50vw;
+
+  padding: 30px;
+}
+
+.loadAndSave {
+  min-height: 8vh;
+}
+
+.fileFormat {
+  min-height: 35vh;
+}
+
+.right {
+  flex-grow: 1;
+
+  padding: 30px;
+}
+
+.information {
+  min-height: 40vh;
+  padding: 30px;
+}
+
+.footer {
+  padding: 30px;
 }

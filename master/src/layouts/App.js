@@ -2,7 +2,6 @@ import '../styles/App.css';
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'
 import Navigation from './Navigation';
-import Import from './Import';
 import LoadAndSave from './LoadAndSave';
 import FileFormat from './FileFormat';
 import Account from './Account';
@@ -18,35 +17,40 @@ class App extends Component {
       <Router>
         <>
           <main className='app'>
-            <aside>
+            <aside className='navigation'>
               {<Navigation />}
             </aside>
-            <section className='importPreview'>
-              <section className='middle'>
-                {<Import />}
-                <div>
-                  {<LoadAndSave />}
+            <main className='importPreview'>
+              <header className='upper'>
+                <section className='middle'>
+                  <div className='loadAndSave'>
+                    {<LoadAndSave />}
+                  </div>
+                  <div className='fileFormat'>
+                    {<FileFormat />}
+                  </div>
+                </section>
+                <aside className='right'>
+                  <div className='account'>
+                    {<Account />}
+                  </div>
+                  <div className='miscellaneous'>
+                    {<Miscellaneous />}
+                  </div>
+                </aside>
+              </header>
+              <div className='infoPreview'>
+                <div className='information'>
+                  {<Information />}
                 </div>
-                <div>
-                  {<FileFormat />}
-                </div>
-              </section>
-              <aside className='right'>
-                <div>
-                  {<Account />}
-                </div>
-                <div>
-                  {<Miscellaneous />}
-                </div>
-              </aside>
-            </section>
-            <div className='Information'>
-              {<Information />}
-            </div>
-            <footer>
-              {<Footer />}
-            </footer>
+                <footer className='footer'>
+                  {<Footer />}
+                </footer>
+              </div>
+            </main>
           </main>
+
+
         </>
       </Router>
     );
