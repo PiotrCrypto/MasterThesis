@@ -6,8 +6,13 @@ import LoadAndSave from './LoadAndSave';
 import FileFormat from './FileFormat';
 import Account from './Account';
 import Miscellaneous from './Miscellaneous';
+
+
+
+
 import Information from './Information';
 import Footer from './Footer';
+
 
 
 class App extends Component {

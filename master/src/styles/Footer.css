@@ -1,0 +1,11 @@
+button {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: bl;
+    padding: 10px;
+    transition: .2s;
+    background-color: white;
+    border-radius: 5px;
+}
+

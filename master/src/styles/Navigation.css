@@ -1,0 +1,29 @@
+
+.main ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+nav.main a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: .2s;
+    background-color: white;
+    border-radius: 12px;
+}
+
+nav.main a:hover {
+    transform: translateX(10px);
+}
+
+
+nav.main a.active {
+    background-color: green;
+    color: white;
+    transform: translateX(0px);
+}
+
