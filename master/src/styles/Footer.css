@@ -1,11 +1,19 @@
-button {
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    border: bl;
-    padding: 10px;
-    transition: .2s;
-    background-color: white;
-    border-radius: 5px;
+div .buttons {
+    text-align: right;
 }
 
+.button {
+  display: inline-block;
+  font-size: 22px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.submit {
+    margin: 0 25px 0 auto;
+}
+
+.reset {
+    margin: 0 25px 0 auto;
+}
